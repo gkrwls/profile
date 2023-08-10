@@ -1,7 +1,7 @@
 //로딩중
 $(function () {
 	const $loading = $('.loading');
-	$loading.children('p').fadeOut();
+	$loading.children('p').fadeOut(250);
 	$loading.delay(250).fadeOut(800);
 });
 
