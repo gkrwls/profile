@@ -52,7 +52,7 @@
   width: 100%;
   height: 100%;
   background-color: #333333;
-  opacity: 0.5;
+  opacity: 0.6;
   content: "";
 }
 #wrap > #home > .intro {
@@ -375,7 +375,7 @@
   position: relative;
   z-index: -1;
   width: 120%;
-  margin: -100px 0 0 -30px;
+  margin: 0 0 0 -40px;
 }
 #wrap #aboutme > .container > .profile > div > ol {
   padding: 0 20px;
@@ -509,12 +509,14 @@
 }
 #wrap #skill > article.skill-1 li:last-child {
   padding-left: 180px;
-  background-image: url(./../images/skill/skill02.png);
+  background-image: url(./../images/skill/skill-html.jpg);
+  background-size: 150px 150px;
 }
 #wrap #skill > article.skill-2 li:first-child {
   padding-left: 360px;
-  background-image: url(./../images/skill/skill03.png);
+  background-image: url(./../images/skill/skill-sass.png);
   background-position: 180px 0;
+  background-size: 150px 150px;
 }
 @media screen and (max-width:640px) {
   #wrap #skill > article.skill-2 li:first-child {
@@ -524,7 +526,8 @@
 }
 #wrap #skill > article.skill-2 li:last-child {
   padding-left: 180px;
-  background-image: url(./../images/skill/skill04.png);
+  background-image: url(./../images/skill/skill-react.png);
+  background-size: 150px, 150px;
 }
 #wrap #ability {
   margin-top: 100px;
@@ -610,16 +613,15 @@
   }
 }
 #wrap #ability > .resume > div > .frame {
-  overflow: hidden;
-  width: 520px;
-  height: 340px;
+  width: 650px;
+  height: 400px;
   margin-right: 50px;
-  border: 1px solid #000;
+  overflow: hidden;
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .frame {
     width: 100%;
-    height: auto;
+    height: 300px;
     margin-right: 0;
     margin-bottom: 10px;
   }
@@ -627,7 +629,11 @@
 #wrap #ability > .resume > div > .frame > img {
   display: block;
   width: 100%;
-  margin-top: -100px;
+}
+@media screen and (max-width:640px) {
+  #wrap #ability > .resume > div > .frame > img {
+    margin-top: -100px;
+  }
 }
 #wrap #ability > .resume > div > .iam {
   display: flex;
@@ -636,6 +642,7 @@
 }
 #wrap #ability > .resume > div > .iam > p {
   line-height: 1.8;
+  margin-left: 5px;
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .iam > p > br {
@@ -652,17 +659,59 @@
 }
 #wrap #ability > .resume > div > .iam > a {
   display: block;
-  width: 260px;
+  width: 350px;
   height: 40px;
   color: #ffffff;
   line-height: 40px;
   text-align: center;
   background-color: #1a1a1a;
+  transition: all 0.6s;
 }
 @media screen and (max-width:640px) {
   #wrap #ability > .resume > div > .iam > a {
     display: none;
   }
+}
+#wrap #ability > .resume > div > .iam > a > i {
+  margin-left: 10px;
+}
+#wrap #ability > .resume > div > .iam > a:hover {
+  background-color: #2b98c3;
+}
+#wrap #ability > .resume > div > .iam > .shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#wrap #ability > .resume > div > .iam > .shadow > .lightbox {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  outline: 2px solid #2c3e50;
+}
+#wrap #ability > .resume > div > .iam > .shadow > .lightbox > button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-width: 0;
+  background-color: transparent;
+}
+#wrap #ability > .resume > div > .iam > .shadow > .lightbox > button > i {
+  display: block;
+  color: #68c3a3;
+  font-size: 20px;
+}
+#wrap #ability > .resume > div > .iam > .shadow > .lightbox > img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 #wrap > footer {
   min-width: 1200px;

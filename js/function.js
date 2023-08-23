@@ -156,3 +156,28 @@ $(function () {
 		}
 	});
 });
+
+//lightbox
+$(function () {
+	const $online = $('.online');
+	const $lightbox = $('.lightbox');
+	const $shadow = $('.shadow');
+
+	$online.on('click', function (evt) {
+		evt.preventDefault();
+
+		$shadow.fadeIn();
+		$lightbox.fadeIn(500);
+	});
+
+	$('.close')
+		.add('.shadow')
+		.on('click', function () {
+			$shadow.fadeOut();
+			$lightbox.fadeOut(500);
+		});
+
+	$lightbox.on('click', function (evt) {
+		evt.stopPropagation();
+	});
+});
