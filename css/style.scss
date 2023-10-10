@@ -255,7 +255,7 @@ $mobile: 'screen and (max-width:640px)';
 			> h2 {
 				position: absolute;
 				left: 7%;
-				@include transTop; //믹신변수 활용
+				@include transTop;
 				background-image: url(./../images/logo.png);
 				background-repeat: no-repeat;
 
@@ -269,7 +269,6 @@ $mobile: 'screen and (max-width:640px)';
 				}
 			}
 
-			//반응형 햄버거 버튼
 			> button {
 				display: none;
 
@@ -568,9 +567,9 @@ $mobile: 'screen and (max-width:640px)';
 
 			&.skill-1 li:first-child {
 				padding-left: 360px;
-				// ---------------------이미지 변경
-				background-image: url(./../images/skill/skill01.png);
+				background-image: url(./../images/skill/UXUI.png);
 				background-position: 180px 0;
+				background-size: 150px;
 
 				@media #{$mobile} {
 					padding-left: 180px;
@@ -579,14 +578,12 @@ $mobile: 'screen and (max-width:640px)';
 			}
 			&.skill-1 li:last-child {
 				padding-left: 180px;
-				// ---------------------이미지 변경
 				background-image: url(./../images/skill/skill-html.jpg);
 				background-size: 150px 150px;
 			}
 
 			&.skill-2 li:first-child {
 				padding-left: 360px;
-				// ---------------------이미지 변경
 				background-image: url(./../images/skill/skill-sass.png);
 				background-position: 180px 0;
 				background-size: 150px 150px;
@@ -599,7 +596,6 @@ $mobile: 'screen and (max-width:640px)';
 
 			&.skill-2 li:last-child {
 				padding-left: 180px;
-				// ---------------------이미지 변경
 				background-image: url(./../images/skill/skill-react.png);
 				background-size: 150px, 150px;
 			}
@@ -828,40 +824,34 @@ $mobile: 'screen and (max-width:640px)';
 				top: 0;
 				width: 400%;
 
-				/*
-					첫번째 슬라이드 left : -000% = -100% * 0
-					두번째 슬라이드 left : -100% = -100% * 1 
-					세번째 슬라이드 left : -200% = -100% * 2 
-					네번째 슬라이드 left : -300% = -100% * 3
-				*/
-
 				> li {
 					width: 25%;
 					height: 440px;
 					text-indent: -9999px;
 					background-position: center center;
 					background-size: cover;
+					background-repeat: no-repeat;
 
 					&.banner_1 {
-						background-image: url(./../images/uxdesign/slides/slide_1.png);
+						background-image: url(./../images/uxdesign/slides/slide4.png);
 						@media #{$mobile} {
 							background-image: url(./../images/uxdesign/slides/rwd_slide_1.png);
 						}
 					}
 					&.banner_2 {
-						background-image: url(./../images/uxdesign/slides/slide_2.jpg);
+						background-image: url(./../images/uxdesign/slides/slide2.jpg);
 						@media #{$mobile} {
 							background-image: url(./../images/uxdesign/slides/rwd_slide_2.png);
 						}
 					}
 					&.banner_3 {
-						background-image: url(./../images/uxdesign/slides/slide_3.jpg);
+						background-image: url(./../images/uxdesign/slides/slide3.png);
 						@media #{$mobile} {
 							background-image: url(./../images/uxdesign/slides/rwd_slide_3.png);
 						}
 					}
 					&.banner_4 {
-						background-image: url(./../images/uxdesign/slides/slide_4.jpg);
+						background-image: url(./../images/uxdesign/slides/slide1.jpg);
 						@media #{$mobile} {
 							background-image: url(./../images/uxdesign/slides/rwd_slide_4.png);
 						}
@@ -1014,7 +1004,7 @@ $mobile: 'screen and (max-width:640px)';
 				}
 
 				> .frame {
-					width: 527px;
+					width: 564px;
 
 					@media #{$mobile} {
 						width: 90%;
